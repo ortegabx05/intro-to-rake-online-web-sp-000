@@ -50,10 +50,4 @@ class Student
     sql = "SELECT * FROM students" 
     DB[:conn].execute(sql)
   end
-  
-  desc 'drop into the Pry console'
-task :console => :environment do
-  Pry.start
-end
-
 end
